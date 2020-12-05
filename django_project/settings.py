@@ -24,7 +24,6 @@ SECRET_KEY = 'c&ubgr0x(t6ps)p)%pzl@ehp547aagx8ft)uwf9jj13ae%o8&%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
 ALLOWED_HOSTS = ['django-blog6.herokuapp.com','localhost']
 
 
@@ -55,6 +54,8 @@ MIDDLEWARE = [
 ]
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 ROOT_URLCONF = 'django_project.urls'
+AUTHENTICATION_BACKENDS = ['blog.email_or_user.EmailorUsernameModelBackend']
+
 #heroku config:set DISABLE_COLLECTSTATIC=1
 TEMPLATES = [
     {
@@ -74,6 +75,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'django_project.wsgi.application'
 
+
+
+
+#EMAIL_BACKEND = 'django.core.mail.backends.smtp.Emailbackend'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
@@ -152,7 +157,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 LOGIN_REDIRECT_URL = 'blog-home'
 LOGIN_URL = 'login'
-EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackended'
+EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST='smtp.gmail.com'
 EMAIL_PORT=587
 EMAIL_USE_TLS=True
