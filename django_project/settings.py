@@ -74,16 +74,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'django_project.wsgi.application'
-
-
-
-
-#EMAIL_BACKEND = 'django.core.mail.backends.smtp.Emailbackend'
-
-# Database
-# https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -147,7 +137,7 @@ TEMPLATE_DIRS = (
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR,  './blog/static'),
+    os.path.join(BASE_DIR,  './static'),
 )
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
@@ -161,5 +151,5 @@ EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST='smtp.gmail.com'
 EMAIL_PORT=587
 EMAIL_USE_TLS=True
-EMAIL_HOST_USER='djangoblog6@gmail.com'
-EMAIL_HOST_PASSWORD='pybixrvagcurssnf'
+EMAIL_HOST_USER=os.environ.get('EMAIL_USER')
+EMAIL_HOST_PASSWORD=os.environ.get('EMAIL_PASS')
