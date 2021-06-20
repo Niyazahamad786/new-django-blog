@@ -4,4 +4,4 @@
    ### 2.Update Post
   ### 3.Delete Post
   ### 4.Update your Profile
-## It works just as a twitter
+## Similar to an twitter app.
