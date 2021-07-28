@@ -1,2 +1,7 @@
 ### Django Blog
-A web app uses a Linear Regression model to suggest suitable price for a house in Banglore's specifiead area.
+A blog where user can create a post,delete,update etc ,which is visible to users in the blog.
+
+Clone This Project (Make Sure You Have Git Installed)
+'''
+https://github.com/Niyazahamad786/new-django-blog.git
+'''
