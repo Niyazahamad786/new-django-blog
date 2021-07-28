@@ -31,7 +31,7 @@ Open a browser to http://127.0.0.1:8000/admin/ to open the admin site
 Create a few test objects of each type.
 Open tab to http://127.0.0.1:8000 to see the main site, with your new objects.
 ```
-The application is deployed in Heroku
+The application is deployed on Heroku platform
 ```
 https://django-blog6.herokuapp.com
 ```
