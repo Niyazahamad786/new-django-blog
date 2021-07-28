@@ -21,6 +21,10 @@ Create SuperUser
 python manage.py createsuperuser
 ```
 
-After all these steps , you can start testing and developing this project. 
+To run the project in local host
+```
+python manage.py runserver
+```
+
 
 #### That's it! Happy Coding!
