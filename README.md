@@ -33,7 +33,7 @@ The application is deployed in Heroku
 https://django-blog6.herokuapp.com
 ```
 Clone the Docker image of the application
-'''
+```
 docker pull niyazahamad195/django-blog
-'''
+```
 #### That's it! Happy Coding!
