@@ -24,7 +24,16 @@ python manage.py createsuperuser
 To run the project in local host
 ```
 python manage.py runserver
+Open a browser to http://127.0.0.1:8000/admin/ to open the admin site
+Create a few test objects of each type.
+Open tab to http://127.0.0.1:8000 to see the main site, with your new objects.
 ```
-
-
+The application is deployed in Heroku
+```
+https://django-blog6.herokuapp.com
+```
+Clone the Docker image of the application
+'''
+docker pull niyazahamad195/django-blog
+'''
 #### That's it! Happy Coding!
