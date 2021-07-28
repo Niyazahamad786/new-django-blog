@@ -3,7 +3,7 @@ A blog where user can create a post,delete,update etc ,which is visible to users
 
 Clone This Project (Make Sure You Have Git Installed)
 ```
-https://github.com/mustafamuratcoskun/DjangoBlogApp.git
+https://github.com/Niyazahamad786/new-django-blog.git
 ```
 Install Dependencies 
 
