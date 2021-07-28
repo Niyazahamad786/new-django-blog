@@ -1,5 +1,8 @@
 ### Django Blog
-A blog where user can create a post,delete,update etc ,which is visible to users in the blog.
+* A blog where user can create a post,delete,update etc ,which is visible to users in the blog.
+* The application uses AWS(S3) service to store the profile pics of the users.
+* Deployed on Heroku platform.
+* Have an docker image of the application in DockerHub.
 
 Clone This Project (Make Sure You Have Git Installed)
 ```
